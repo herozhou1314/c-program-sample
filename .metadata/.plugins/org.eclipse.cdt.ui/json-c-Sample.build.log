@@ -1,0 +1,14 @@
+01:02:51 **** Incremental Build of configuration Release for project json-c-Sample ****
+make all 
+Building file: ../src/json.resouse/json_object.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/json.resouse/json_object.d" -MT"src/json.resouse/json_object.d" -o "src/json.resouse/json_object.o" "../src/json.resouse/json_object.c"
+../src/json.resouse/json_object.c: 在函数‘json_object_object_to_json_string’中:
+../src/json.resouse/json_object.c:194:2: 错误： 只允许在 C99 模式下使用‘for’循环初始化声明
+../src/json.resouse/json_object.c:194:2: 附注： 使用 -std=c99 或 -std=gnu99 来编译您的代码
+../src/json.resouse/json_object.c: 在函数‘json_object_array_to_json_string’中:
+../src/json.resouse/json_object.c:415:2: 错误： 只允许在 C99 模式下使用‘for’循环初始化声明
+make: *** [src/json.resouse/json_object.o] 错误 1
+
+01:02:52 Build Finished (took 284ms)
+

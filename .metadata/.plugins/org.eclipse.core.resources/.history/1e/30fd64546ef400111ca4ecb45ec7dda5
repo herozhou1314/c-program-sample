@@ -1,0 +1,12 @@
+/*
+ * StructUtil.c
+ *
+ *  Created on: 2012-9-2
+ *      Author: herozhou1314
+ */
+#include "sell_node.h"
+int sll_insert(Node *current, int newValue) {
+	Node *previous;
+	Node *new;
+	return 0;
+}

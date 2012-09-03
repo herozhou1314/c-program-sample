@@ -1,0 +1,141 @@
+/*
+ ============================================================================
+ Name        : LinkedList.c
+ Author      : herozhou1314
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+struct list {
+	int data;
+	struct list *next;
+};
+typedef struct list Node;
+typedef Node *Link;
+/*释放链表*/
+void free_list(Link head) //head为指向头链表的指针
+{
+	Link Pointer;
+	while (head != NULL ) //节点为NULL,结束循环
+	{
+		Pointer = head;
+		head = head->next; //head指向下一个节点
+		free(Pointer);
+	}
+}
+/*创建链表*/
+Link create_list(Link head) {
+	int Data;
+	Link New; //节点声明，新节点
+	Link Pointer;
+// int i;
+	/*建立头节点*/
+	head = (Link) malloc(sizeof(Node));
+	if (head == NULL )
+		printf("memory allocate Failure!\n");
+	else {
+		Data = 1;
+		head->data = Data;
+		head->next = NULL;
+	}
+	Pointer = head;
+	while (Data <= 10) {
+		Data++;
+		New = (Link) malloc(sizeof(Node));
+		New->data = Data;
+		New->next = NULL;
+		Pointer->next = New; //新节点链接在链表尾端
+		Pointer = New; //Pointer指向链表尾端节点
+	}
+	return head;
+}
+/*输出链表数据*/
+void print_list(Link head) {
+	Link Pointer;
+	Pointer = head;
+	while (Pointer != NULL ) {
+		printf("%d\n", Pointer->data);
+
+		Pointer = Pointer->next; //指向下一个节点
+	}
+}
+/*插入节点至链表内*/
+Link insert_list(Link head, Link New, int key) //head 为头节点，New为要插入的节点，key为要插入其节点之后
+{
+	Link Pointer;
+	Pointer = head;
+	while (1) {
+		if (head == NULL ) {
+			New->next = head;
+			head = New;
+			break;
+		}
+		if (Pointer->data == key) {
+			New->next = Pointer->next;
+			Pointer->next = New;
+			break;
+		}
+
+		Pointer = Pointer->next;
+	}
+	return head;
+}
+/*删除链表中的节点*/
+Link delete_list(Link head, Link New, int key) {
+	Link Pointer;
+	Link back;
+	Pointer = head;
+	while (1) {
+		if (Pointer->next == NULL ) //找不到的情况
+		{
+			printf("not found!\n");
+			break;
+		}
+		if (head->data == key) //首节点的情况
+				{
+			head = Pointer->next;
+			free(Pointer);
+			break;
+		}
+		back = Pointer;
+		Pointer = Pointer->next; //指向下一个节点
+		if (Pointer->data == key) {
+			back->next = Pointer->next;
+			free(Pointer);
+			break;
+		}
+	}
+	return head;
+}
+void main() {
+	Link head = NULL;
+	Link New;
+	head = create_list(head); //生成链表
+
+	if (head != NULL ) {
+
+		New = (Link) malloc(sizeof(Node));
+		New->data = 12;
+		New->next = NULL;
+		head = insert_list(head, New, 3);
+		head = delete_list(head, New, 12);
+		print_list(head);
+		free_list(head);
+	}
+}
+/*#include "sell_node.h"
+ #include "Util.h"
+ int main(void) {
+ puts("!!!Hello World!!!\n");  prints !!!Hello World!!!
+ Node *p;
+ p = (Node *) malloc(sizeof(Node));
+ p->value = 5;
+ util_print_int(p->value);
+ int result = sll_insert(p, 12);
+ util_print_int(result);
+ return EXIT_SUCCESS;
+ }*/

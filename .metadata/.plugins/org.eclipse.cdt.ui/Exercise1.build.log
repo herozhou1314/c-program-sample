@@ -1,0 +1,7 @@
+01:49:49 **** Clean-only build of configuration Release for project Exercise1 ****
+make clean 
+rm -rf  ./src/Exercise1.o ./src/boutput.o ./src/char.o ./src/mbyte.o ./src/umbyte.o ./src/xoutput.o  ./src/Exercise1.d ./src/boutput.d ./src/char.d ./src/mbyte.d ./src/umbyte.d ./src/xoutput.d  Exercise1
+ 
+
+01:49:49 Build Finished (took 113ms)
+

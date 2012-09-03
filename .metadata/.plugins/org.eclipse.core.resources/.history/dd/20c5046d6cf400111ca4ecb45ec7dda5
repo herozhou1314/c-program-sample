@@ -1,0 +1,15 @@
+/*
+ * Util.h
+ *
+ *  Created on: 2012-9-2
+ *      Author: herozhou1314
+ */
+
+#ifndef SELL_NODE_H_
+#define SELL_NODE_H_
+typedef struct Node {
+	struct Node *link;
+	int value;
+};
+
+#endif /* UTIL_H_ */

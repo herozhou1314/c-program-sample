@@ -1,0 +1,38 @@
+/*
+ * StructUtil.c
+ *
+ *  Created on: 2012-9-2
+ *      Author: herozhou1314
+ */
+#include "sell_node.h"
+#include <stdio.h>
+/****
+ * 插入一个有序的链表
+ */
+int sll_insert(Node *current, int new_value) {
+	Node *previous;
+	Node *new;
+	/*****
+	 * 寻找正确的插入位置，方法是按顺序访问链表，直到到达其值大于或等于新插入的节点
+	 */
+	while (current->value < new_value) {
+		previous = current;
+		current = current->link;
+	}
+	new = (Node *) malloc(sizeof(Node));
+
+	if (new == NULL ) {
+		return FALSE;
+	}
+
+	new->value = new_value;
+
+	/***
+	 *  把新節點插入到节点，并返回true
+	 */
+	new->link = current;
+	previous->link = new;
+
+	return TRUE;
+
+}

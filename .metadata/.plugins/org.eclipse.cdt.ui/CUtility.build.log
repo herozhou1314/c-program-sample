@@ -1,0 +1,7 @@
+01:03:06 **** Clean-only build of configuration Release for project CUtility ****
+make clean 
+rm -rf  ./src/Sample.o ./src/Smaple2.o ./src/Util_print.o  ./src/Sample.d ./src/Smaple2.d ./src/Util_print.d  CUtility
+ 
+
+01:03:06 Build Finished (took 122ms)
+

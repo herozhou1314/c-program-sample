@@ -1,0 +1,6 @@
+01:15:48 **** Incremental Build of configuration Debug for project CStruct ****
+make all 
+make: 没有什么可以做的为 `all'。
+
+01:15:48 Build Finished (took 60ms)
+

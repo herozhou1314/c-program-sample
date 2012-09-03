@@ -1,0 +1,86 @@
+01:35:19 **** Incremental Build of configuration Release for project LinkedList ****
+make all 
+make: 没有什么可以做的为 `all'。
+01:36:40 **** Incremental Build of configuration Release for project LinkedList ****
+make all 
+Building file: ../src/LinkedList_02.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList_02.d" -MT"src/LinkedList_02.d" -o "src/LinkedList_02.o" "../src/LinkedList_02.c"
+../src/LinkedList_02.c: 在函数‘getElemAddr’中:
+../src/LinkedList_02.c:188:3: 警告： 格式 ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘elemType *’ [-Wformat]
+../src/LinkedList_02.c: 在函数‘main’中:
+../src/LinkedList_02.c:276:11: 警告： 未使用的变量‘posElem’ [-Wunused-variable]
+../src/LinkedList_02.c:274:6: 警告： 未使用的变量‘length’ [-Wunused-variable]
+../src/LinkedList_02.c: 在函数‘creatList’中:
+../src/LinkedList_02.c:62:7: 警告： 忽略声明有 warn_unused_result 属性的‘scanf’的返回值 [-Wunused-result]
+../src/LinkedList_02.c:80:8: 警告： 忽略声明有 warn_unused_result 属性的‘scanf’的返回值 [-Wunused-result]
+Finished building: ../src/LinkedList_02.c
+ 
+Building target: LinkedList
+Invoking: GCC C Linker
+gcc  -o "LinkedList"  ./src/LinkedList.o ./src/LinkedList_02.o ./src/Util_print.o ./src/util.o   
+Finished building target: LinkedList
+ 
+01:37:07 **** Incremental Build of configuration Release for project LinkedList ****
+make all 
+make: 没有什么可以做的为 `all'。
+01:39:28 **** Incremental Build of configuration Release for project LinkedList ****
+make all 
+Building file: ../src/LinkedList_02.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList_02.d" -MT"src/LinkedList_02.d" -o "src/LinkedList_02.o" "../src/LinkedList_02.c"
+../src/LinkedList_02.c: 在函数‘getElemAddr’中:
+../src/LinkedList_02.c:186:3: 警告： 格式 ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘elemType *’ [-Wformat]
+../src/LinkedList_02.c: 在函数‘main’中:
+../src/LinkedList_02.c:274:11: 警告： 未使用的变量‘posElem’ [-Wunused-variable]
+../src/LinkedList_02.c:272:6: 警告： 未使用的变量‘length’ [-Wunused-variable]
+../src/LinkedList_02.c: 在函数‘creatList’中:
+../src/LinkedList_02.c:60:7: 警告： 忽略声明有 warn_unused_result 属性的‘scanf’的返回值 [-Wunused-result]
+../src/LinkedList_02.c:78:8: 警告： 忽略声明有 warn_unused_result 属性的‘scanf’的返回值 [-Wunused-result]
+Finished building: ../src/LinkedList_02.c
+ 
+Building target: LinkedList
+Invoking: GCC C Linker
+gcc  -o "LinkedList"  ./src/LinkedList.o ./src/LinkedList_02.o ./src/Util_print.o ./src/util.o   
+Finished building target: LinkedList
+ 
+01:39:46 **** Incremental Build of configuration Release for project LinkedList ****
+make all 
+Building file: ../src/LinkedList_02.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList_02.d" -MT"src/LinkedList_02.d" -o "src/LinkedList_02.o" "../src/LinkedList_02.c"
+../src/LinkedList_02.c: 在函数‘getElemAddr’中:
+../src/LinkedList_02.c:186:3: 警告： 格式 ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘elemType *’ [-Wformat]
+../src/LinkedList_02.c: 在函数‘main’中:
+../src/LinkedList_02.c:274:11: 警告： 未使用的变量‘posElem’ [-Wunused-variable]
+../src/LinkedList_02.c:272:6: 警告： 未使用的变量‘length’ [-Wunused-variable]
+../src/LinkedList_02.c: 在函数‘creatList’中:
+../src/LinkedList_02.c:60:7: 警告： 忽略声明有 warn_unused_result 属性的‘scanf’的返回值 [-Wunused-result]
+../src/LinkedList_02.c:78:8: 警告： 忽略声明有 warn_unused_result 属性的‘scanf’的返回值 [-Wunused-result]
+Finished building: ../src/LinkedList_02.c
+ 
+Building target: LinkedList
+Invoking: GCC C Linker
+gcc  -o "LinkedList"  ./src/LinkedList.o ./src/LinkedList_02.o ./src/Util_print.o ./src/util.o   
+Finished building target: LinkedList
+ 
+01:40:27 **** Incremental Build of configuration Release for project LinkedList ****
+make all 
+Building file: ../src/LinkedList_02.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList_02.d" -MT"src/LinkedList_02.d" -o "src/LinkedList_02.o" "../src/LinkedList_02.c"
+../src/LinkedList_02.c: 在函数‘getElemAddr’中:
+../src/LinkedList_02.c:186:3: 警告： 格式 ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘elemType *’ [-Wformat]
+../src/LinkedList_02.c: 在函数‘main’中:
+../src/LinkedList_02.c:274:11: 警告： 未使用的变量‘posElem’ [-Wunused-variable]
+../src/LinkedList_02.c:272:6: 警告： 未使用的变量‘length’ [-Wunused-variable]
+../src/LinkedList_02.c: 在函数‘creatList’中:
+../src/LinkedList_02.c:60:7: 警告： 忽略声明有 warn_unused_result 属性的‘scanf’的返回值 [-Wunused-result]
+../src/LinkedList_02.c:78:8: 警告： 忽略声明有 warn_unused_result 属性的‘scanf’的返回值 [-Wunused-result]
+Finished building: ../src/LinkedList_02.c
+ 
+Building target: LinkedList
+Invoking: GCC C Linker
+gcc  -o "LinkedList"  ./src/LinkedList.o ./src/LinkedList_02.o ./src/Util_print.o ./src/util.o   
+Finished building target: LinkedList
+ 

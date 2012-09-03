@@ -1,0 +1,22 @@
+01:46:08 **** Incremental Build of configuration Release for project exercise1 ****
+make all 
+Building target: exercise1
+Invoking: GCC C Linker
+gcc  -o "exercise1"  ./src/boutput.o ./src/char.o ./src/mbyte.o ./src/umbyte.o ./src/xoutput.o   
+./src/char.o: In function `main':
+char.c:(.text.startup+0x0): multiple definition of `main'
+./src/boutput.o:boutput.c:(.text.startup+0x0): first defined here
+./src/mbyte.o: In function `main':
+mbyte.c:(.text.startup+0x0): multiple definition of `main'
+./src/boutput.o:boutput.c:(.text.startup+0x0): first defined here
+./src/umbyte.o: In function `main':
+umbyte.c:(.text.startup+0x0): multiple definition of `main'
+./src/boutput.o:boutput.c:(.text.startup+0x0): first defined here
+./src/xoutput.o: In function `main':
+xoutput.c:(.text.startup+0x0): multiple definition of `main'
+./src/boutput.o:boutput.c:(.text.startup+0x0): first defined here
+collect2: ld 返回 1
+make: *** [exercise1] 错误 1
+
+01:46:08 Build Finished (took 168ms)
+

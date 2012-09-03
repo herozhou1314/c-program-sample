@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;LinkedList/src/Util.h&apos; to &apos;sell_node.h&apos;" description="Rename resource &apos;Util.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Util.h" name="sell_node.h" stamp="1346528124698" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;LinkedList/src/StructUtil.c&apos; to &apos;util.c&apos;" description="Rename resource &apos;StructUtil.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/StructUtil.c" name="util.c" stamp="1346528375745" updateReferences="true"/>
+</session>
